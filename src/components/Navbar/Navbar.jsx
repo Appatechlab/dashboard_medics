@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from './Logo'
 import SearchInput from './SearchInput'
 import Profile from './Profile'
-import { BellIcon } from 'lucide-react'
+import { BellIcon, Search } from 'lucide-react'
 
 const Navbar = () => {
   return (
@@ -10,11 +10,12 @@ const Navbar = () => {
         {/* <!-- Logo --> */}
         <Logo />
         
-        <div className='flex items-center gap-4 justify-between'>
+        <div className='flex items-center gap-4 justify-end min-[500px]:justify-between'>
             <SearchInput />
 
             <div className='flex items-center gap-4'>
-                <div>
+                <div className='flex items-center gap-4'>
+                  <Search color='#339cff' className="sm:hidden"/>
                     <BellIcon color='#339cff' size={25} className='hover:cursor-pointer'/>
                 </div>
 

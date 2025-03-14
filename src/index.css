@@ -8,7 +8,7 @@
 :root {
     --clr-red-400: hsl(358, 79%, 67%);
     --clr-blue-100: hsl(210, 77%, 95%);
-    --clr-blue-400: #339cff;
+    --clr-blue-400: hsl(209, 100%, 60%);
     --clr-cyan-400: hsl(182, 73%, 44%);
     --clr-black-400: hsl(210, 2%, 18%);
     --clr-white: hsl(0, 0%, 98%);
@@ -57,10 +57,10 @@ body {
 }
 
 .layout{
-    @apply grid grid-cols-[220px_1fr] gap-4 px-8 py-3;
+    @apply grid grid-cols-[130px_1fr] sm:grid-cols-[120px_1fr] md:grid-cols-[220px_1fr] gap-4 px-5 min-[1280px]:px-8 py-3;
 }
 .layout-main{
-    @apply grid grid-cols-[252px_1fr] gap-4 pr-8 py-3;
+    @apply grid min-[1280px]:grid-cols-[252px_1fr] gap-4 px-5 min-[1280px]:px-0 min-[1280px]:pr-8 py-3 grid-cols-[1fr];
 }
 
 .sidebar-link-hover p,

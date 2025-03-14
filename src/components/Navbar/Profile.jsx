@@ -7,11 +7,11 @@ const Profile = () => {
         <div className='h-10 w-10 rounded-full overflow-hidden border-2 border-green-600'>
             <img src={ProfileImage} alt="profile" className='w-full h-full object-cover object-top'/>
         </div>
-        <div>
+        <div className='hidden sm:block'>
             <p className='text-sm font-medium'>Appati Benedict</p>
             <p className='text-gray-500 text-xs'>Admin</p>
         </div>
-        <div>
+        <div className='hidden sm:block'>
             <ChevronUp size={15}/>
             <ChevronDown size={15} className='-mt-1'/>
         </div>

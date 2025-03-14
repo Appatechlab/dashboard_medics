@@ -7,7 +7,7 @@ import { Home, LayoutDashboardIcon, LogOutIcon, Settings } from 'lucide-react'
 
 function Sidebar() {
   return (
-    <div className='bg-white py-5 pl-8 h-[87vh] rounded-2xl sticky top-[5.25rem]'>
+    <div className='bg-white py-5 pl-8 h-[87vh] rounded-2xl sticky top-[5.25rem] hidden min-[1280px]:block'>
         <h2 className='font-bold text-[15px]'>Menu</h2>
 
         <div className='flex flex-col gap-5 mt-5'>
