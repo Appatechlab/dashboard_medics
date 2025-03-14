@@ -25,7 +25,7 @@ const Panels = () => {
           <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 gap-6'>
             <div className='rounded-2xl bg-white py-4 pr-2 sm:pr-8 shadow-md'>
               <h2 className='font-bold text-xl pl-8'>Patient Prescription</h2>
-              <div className='mt-5'>
+              <div className='mt-5 overflow-x-auto'>
                 <BarGraph />
               </div>
             </div>
@@ -46,7 +46,7 @@ const Panels = () => {
           </div>
 
           <div className='mt-6 bg-white rounded-2xl py-4 pl-2 pr-2 sm:pr-8 shadow-md'>
-              <div className='flex sm:justify-between sm:items-center justify-start flex-col gap-2'>
+              <div className='flex sm:justify-between sm:items-center justify-start flex-col sm:flex-row gap-2'>
                 <h2 className='font-bold text-xl pl-3 sm:pl-8'>Patient Statistics</h2>
                 <select name="" id="" className='text-sm ml-2 sm:ml-0 text-gray-500 border-2 border-gray-200 rounded-lg py-2 px-2'>
                   <option value="">Today</option>
@@ -55,7 +55,7 @@ const Panels = () => {
                   <option value="">This Year</option>
                 </select>
               </div>
-              <div className='mt-4'>
+              <div className='mt-4 overflow-x-auto'>
                 <SmoothAreaChart />
               </div>
           </div>

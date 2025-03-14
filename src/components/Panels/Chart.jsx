@@ -13,7 +13,7 @@ const data = [
 
 const BarGraph = () => {
     return (
-        <ResponsiveContainer width="100%" height={350}>
+        <ResponsiveContainer width="100%" height={350} minWidth={400}>
             <BarChart data={data} margin={{ top: 5, right: 0, left: 0, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" tick={{fontSize: 14}}/>
@@ -46,7 +46,7 @@ const data_2 = [
 
 const SmoothAreaChart = () => {
   return (
-    <ResponsiveContainer width="100%" height={400}>
+    <ResponsiveContainer width="100%" height={400} minWidth={450}>
       <AreaChart data={data_2}>
         <defs>
             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
