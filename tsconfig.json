@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "strict": true,
+      "jsx": "react-jsx",
+      "baseUrl": "./src",  // Set baseUrl to the `src` directory
+      "paths": {
+        "@/*": ["*"],  // This allows you to use `@` as an alias for `src`
+        "@components/*": ["components/*"], // Example alias for components folder
+        "@utils/*": ["utils/*" ] // Example alias for utils folder
+      }
+    },
+    "include": ["src"]
+  }
